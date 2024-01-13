@@ -8,13 +8,13 @@ For benchmark data and results, see [Gray8 Lossless Photo Compression Benchmark]
 
 ## How to run benchmark
 
-First, set several paths in [RunBenchmark.py][./RunBenchmark.py] : 
+First, set several paths in [RunBenchmark.py](./RunBenchmark.py) : 
 
 * `DIR_INPUT` is input directory. You need to put some .pgm grayscale 8-bit images inside it. For the format of .pgm file, see [PGM format specification](https://netpbm.sourceforge.net/doc/pgm.html)
 * `DIR_ENCODED` is the directory to put the compressed images. Need to make it non-existent, the script will automatically create it.
 * `DIR_DECODED` is the directory to put the uncompressed images. Need to make it non-existent, the script will automatically create it.
 
-Then, uncomment one of the lines in [RunBenchmark.py][./RunBenchmark.py] to select a image codec.
+Then, uncomment one of the lines in [RunBenchmark.py](./RunBenchmark.py) to select a image codec.
 
 - I've put the executable files of several codecs are in [codec](./codec) directory (include PNG, JPEG-XL, JPEG-LS, WEBP, BMF, Gralic, etc.). The script will use one of them to compress/decompress images.
 - Note: I have attached the **copyright statements**, **licenses**, and **source from** of these codecs in the corresponding directory. If the original author wants me to supplement more statements, please contact me through the issue.
@@ -52,7 +52,7 @@ I used Pillow 10.1.0 and pillow_jpls 1.3.2
 
 ### Run Linux binary
 
-Some codecs are Linux binary which need to run on Linux. If your computer has Windows Subsystem of Linux (WSL) installed, you can also run them on Windows, as detailed in the comments in [RunBenchmark.py][./RunBenchmark.py] .
+Some codecs are Linux binary which need to run on Linux. If your computer has Windows Subsystem of Linux (WSL) installed, you can also run them on Windows, as detailed in the comments in [RunBenchmark.py](./RunBenchmark.py).
 
 　
 
