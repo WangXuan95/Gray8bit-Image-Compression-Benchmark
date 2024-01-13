@@ -1,0 +1,66 @@
+        May 24, 2010  v.2.01
+    Some bugs were fixed (thanks to Alex Ratushnyak and Niels Fröhling);
+
+        Apr 29, 2009  v.2.0
+    THIS VERSION IS FULLY INCOMPATIBLE WITH PREVIOUS ONES;
+    Compression performance was improved;
+    PNM file format was added for reading/writing;
+
+        Sep 26, 1999  v.1.1
+    Compression performance was improved for some cases;
+
+        May 28, 1999  v.1.0
+    THIS VERSION IS FULLY INCOMPATIBLE WITH PREVIOUS ONES;
+    Tiny images processing bug was fixed, some internal defects were fixed;
+    Maximal allowed error was enlarged up to 15(why do You need it?);
+    -R switch was added;
+    DOS extender files were excluded from package;
+    BMFVIEWW program was added;
+
+        Apr 10, 1999  v.0.5
+    THIS VERSION IS FULLY INCOMPATIBLE WITH PREVIOUS ONES;
+    Compression/decompression speed & compression performance were improved
+for some cases;
+    Near-lossless compression mode was added;
+
+        Dec 26, 1998  v.0.4
+    THIS VERSION IS FULLY INCOMPATIBLE WITH PREVIOUS ONES;
+    Decompression speed was improved for some cases;
+    Compression performance was improved;
+    INI-file processing was added;
+    Sun Raster file format support was included for reading only;
+    -T option works normally now;
+
+        Sep 7, 1998  v.0.3
+    THIS VERSION IS FULLY INCOMPATIBLE WITH PREVIOUS ONES;
+    Compression/decompression speed & compression performance were improved;
+    BMFVIEW program was excluded due  its small usability (it runs  under pure
+DOS only). If You needs this programm then You can send me mail with request;
+    32-bit TGA header attribute bits error was fixed;
+    -F switch now means: use/not use image filters;
+    -D, -T and -O switches were added;
+    -S switch was added, it is not recommended for everyday use;
+    This version is  optimized for P6-PII  processors, previous versions  were
+optimized for 80486 processor;
+
+        Jun 24, 1998  v.0.21
+    THIS VERSION IS FULLY COMPATIBLE WITH v.0.2;
+    Compression performance was marginally improved;
+    Windows 3.0 .BMP file format support  was added for writing also. If  .BMP
+format does not support  given image (for 2-,  15-, 16-, 32-bpp images),  then
+output is switched back to .TGA file;
+    Packed .BMP file reading defect was fixed;
+    /Q9  switch  value  uses  now   full  image  for  filter  selection   (for
+compression fans only :-));
+
+        Jun 10, 1998  v.0.2
+    THIS VERSION IS FULLY INCOMPATIBLE WITH v.0.1;
+    Compression/decompression speed & compression performance were improved;
+    16-colour .TGA file format error was fixed;
+    Windows 3.0 .BMP file format support was included for reading only;
+    Compression performance can begin to  degradate for too wide images,  with
+width more than 2000 pixels, previous version has no this limitation;
+    -F8 switch value was changed to -F4 switch value;
+
+        Mar 21, 1998  v.0.1
+    Initial release;

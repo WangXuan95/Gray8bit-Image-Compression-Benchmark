@@ -1,0 +1,3 @@
+Source and Copyright from:
+https://github.com/libjxl/libjxl/releases
+(v0.9.0)

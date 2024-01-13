@@ -1,0 +1,3 @@
+Source and Copyright from:
+https://github.com/WangXuan95/NBLIC-Image-Compression
+(v0.3)

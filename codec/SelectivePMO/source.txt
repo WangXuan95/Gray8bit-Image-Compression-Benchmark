@@ -1,0 +1,4 @@
+Source and Copyright from:
+https://github.com/matsuda-lab-tus/Selective-PMO
+
+Paper: Hiroki Kojima, Yasuyo Kita, Ichiro Matsuda, Susumu Itoh, Yusuke Kameda, Kyohei Unno, Kei Kawamura: "Improved Probability Modeling for Lossless Image Coding Using Example Search and Adaptive Prediction", Proceedings of the 25th International Workshop on Advanced Image Technology 2022 (IWAIT 2022), Jan. 2022.

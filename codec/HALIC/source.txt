@@ -1,0 +1,3 @@
+Source and Copyright from:
+https://encode.su/threads/4025-HALIC-(High-Availability-Lossless-Image-Compression)
+(v_0_6_1)

@@ -1,0 +1,8 @@
+Source and Copyright from:
+https://www.rs.tus.ac.jp/matsuda-lab/matsuda/mrp/index.html
+(v0.5)
+
+paper: Ichiro Matsuda, Nau Ozaki, Yuji Umezu and Susumu Itoh, "Lossless Coding Using Variable Block-Size Adaptive Prediction Optimized for Each Image", Proceedings of 13th European Signal Processing Conference (EUSIPCO 2005), WedAmPO3, Sep. 2005.
+
+The original MRP project was compiled in Linux, but I have changed it to Windows compilation here.
+If MINGW is installed on your Windows, simply run build.bat to compile.
