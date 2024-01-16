@@ -1,6 +1,8 @@
 # Gray 8-bit Lossless Image Compression benchmark
 
-This repo provides scripts (Python) to run benchmark results of Gray 8-bit lossless image compression.
+This repo provides scripts (Python) to run Gray 8-bit lossless image compression benchmark.
+
+The benchmark is to evaluate the **compression rate**, **compression time** , and **decompression time** of several image formats or codecs.
 
 For benchmark data and results, see [Gray8 Lossless Photo Compression Benchmark](http://home.ustc.edu.cn/~wgg/gray8_LPCB.html) !!
 
@@ -8,18 +10,19 @@ For benchmark data and results, see [Gray8 Lossless Photo Compression Benchmark]
 
 ## How to run benchmark
 
-First, set several paths in [RunBenchmark.py](./RunBenchmark.py) : 
+**Step1**: config paths in [RunBenchmark.py](./RunBenchmark.py) : 
 
-* `DIR_INPUT` is input directory. You need to put some .pgm grayscale 8-bit images inside it. For the format of .pgm file, see [PGM format specification](https://netpbm.sourceforge.net/doc/pgm.html)
-* `DIR_ENCODED` is the directory to put the compressed images. Need to make it non-existent, the script will automatically create it.
-* `DIR_DECODED` is the directory to put the uncompressed images. Need to make it non-existent, the script will automatically create it.
+```python
+DIR_INPUT   = 'gray8_example'   # Input directory. put some .pgm grayscale 8-bit images inside it. For the format of .pgm file, see https://netpbm.sourceforge.net/doc/pgm.html
+DIR_ENCODED = 'encoded'         # Directory to put the compressed images.   Make it non-existent, this program will automatically create it.
+DIR_DECODED = 'decoded'         # Directory to put the decompressed images. Make it non-existent, this program will automatically create it.
+```
 
-Then, uncomment one of the lines in [RunBenchmark.py](./RunBenchmark.py) to select a image codec.
+**Step2**: Uncomment one of the lines in [RunBenchmark.py](./RunBenchmark.py) to select a image codec. The script will call the executable files in [codec](./codec) directory to compress/decompress images.
 
-- I've put the executable files of several codecs are in [codec](./codec) directory (include PNG, JPEG-XL, JPEG-LS, WEBP, BMF, Gralic, etc.). The script will use one of them to compress/decompress images.
-- Note: I have attached the **copyright statements**, **licenses**, and **source from** of these codecs in the corresponding directory. If the original author wants me to supplement more statements, please contact me through the issue.
+Note: I've put several image codecs in [codec](./codec) directory, including **PNG**, **JPEG-XL**, **JPEG-LS**, **BMF**, **Gralic**, etc.. I also attach the **copyright statements**, **licenses**, and **source from** of these codecs in the corresponding directory. If the authors of the codecs want me to supplement more statements, please contact me through the issue.
 
-Then, just run the script in Windows:
+**Step3**: run the script in Windows:
 
 ```powershell
 python RunBenchmark.py
@@ -29,9 +32,9 @@ python RunBenchmark.py
 
 ## Benchmark data
 
-For details on how to obtain large benchmark, please refer to [Gray8 Lossless Photo Compression Benchmark](http://home.ustc.edu.cn/~wgg/gray8_LPCB.html) !!
+For details on how to obtain large benchmark, see [Gray8 Lossless Photo Compression Benchmark](http://home.ustc.edu.cn/~wgg/gray8_LPCB.html) 
 
-Here are only a few small images provided to test the scripts. [gray8_example](./gray8_example)
+Here I only provide a few small images in [gray8_example](./gray8_example) for you to test the scripts.
 
 　　
 

@@ -1,0 +1,4 @@
+Source and Copyright from:
+https://www.ece.mcmaster.ca/~xwu/
+
+paper: X. Wu and N. Memon, ``Context-based, adaptive, lossless image codec'', IEEE Trans. on Communications, vol. 45, no. 4, pp. 437-444, April 1997.

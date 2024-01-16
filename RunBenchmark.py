@@ -11,10 +11,10 @@ import time
 
 
 # Note: specific directories here
-#DIR_INPUT   = 'rgb888_example'        # some codec need to input RGB888 image
-DIR_INPUT   = 'gray8_example'
-DIR_ENCODED = 'encoded'
-DIR_DECODED = 'decoded'
+#DIR_INPUT   = 'rgb888_example' # some codec need to input RGB888 image
+DIR_INPUT   = 'gray8_example'   # Input directory. Put some .pgm grayscale 8-bit images inside it. For the format of .pgm file, see https://netpbm.sourceforge.net/doc/pgm.html
+DIR_ENCODED = 'encoded'         # Directory to put the compressed images.   Make it non-existent, this program will automatically create it.
+DIR_DECODED = 'decoded'         # Directory to put the decompressed images. Make it non-existent, this program will automatically create it.
 
 
 # Note: please uncomment one of the lines below to select a codec !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -27,8 +27,9 @@ ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe -s -q9 -O{1} {0}'              
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce2V {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -dV {0} {1}.pgm'            ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce3V {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -dV {0} {1}.pgm'            ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\JPEG-XL\cjxl.exe {0} {1}.jxl -q 100 -e 7'                            , r'.\codec\JPEG-XL\djxl.exe {0} {1}.pgm'                     ]
-#ENCODE_CMD, DECODE_CMD = [r'.\codec\MRP\mrp_enc.exe    {0} {1}.mrp'                                       , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
-#ENCODE_CMD, DECODE_CMD = [r'.\codec\MRP\mrp_enc.exe -o {0} {1}.mrp'                                       , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
+#ENCODE_CMD, DECODE_CMD = [ r'python .\codec\CALIC\calic.py e {0} {1}.calic 0'                             , r'python .\codec\CALIC\calic.py d {0} {1}.raw'              ]
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\MRP\mrp_enc.exe    {0} {1}.mrp'                                      , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\MRP\mrp_enc.exe -o {0} {1}.mrp'                                      , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\GRALIC\Gralic111d.exe c {1}.gralic {0}'                              , r'.\codec\GRALIC\Gralic111d.exe d {0} {1}.ppm'              ]   # require RGB888 image as input !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\LEA\clea.exe {0} {1}.lea'                                            , r'.\codec\LEA\dlea.exe {0} {1}.ppm'                         ]   # require RGB888 image as input !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\FLIC\FLIC.exe c {1}.flic {0}'                                        , r'.\codec\FLIC\FLIC.exe d {0} {1}.ppm'                      ]   # require RGB888 image as input !!
