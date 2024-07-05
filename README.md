@@ -88,13 +88,10 @@ There are 20+ compression formats/methods that participated in this benchmark:
     The compressor/decompressor used in this test is as same as the BMF2.01 used in <a href="http://qlic.altervista.org/">24-bit RGB LPCB</a>.
 - <b>Gralic</b> (v1.11d) is closed-sourced lossless image format by Alex Rhatushnyak.
     The compressor/decompressor used in this test is as same as the Gralic1.11d used in <a href="http://qlic.altervista.org/">24-bit RGB LPCB</a>.
-    <i>Note: since Gralic seems to have issues when enc/dec gray 8-bit images on my computer, so I temporarily test it using <a href="#rgb888_method">this method</a>.
     I've contact the author of Gralic and report this issue.</i>
 - <b>FLIC</b> (v2.1d) and <b>QLIC2</b> (v2.d) by Alex Rhatushnyak. Same as the one used in <a href="http://qlic.altervista.org/">24-bit RGB LPCB</a>.
-    <i>Note: since they do not directly support gray 8-bit image, so I test them using <a href="#rgb888_method">this method</a></i>.
 - <b><a href="https://encode.su/threads/3818-LEA-Lossless-image-compressor">LEA</a></b> (v0.6 beta) by Marcio Pais.
     <i>If their links expire, just search them in <a href="https://encode.su">encode.su</a></i> .
-    <i>Note: since they do not directly support gray 8-bit image, so I test them using <a href="#rgb888_method">this method</a></i>.
 - <b><a href="https://encode.su/threads/4025-HALIC-(High-Availability-Lossless-Image-Compression)">HALIC</a></b> (0.7.2) by Hakan Abbas.
     You can get HALIC 0.7.2 <a href="https://github.com/Hakan-Abbas/HALIC-High-Availability-Lossless-Image-Compression-/releases/tag/0.7.2">here</a>.
 - <b>NBLIC</b> (v0.3) is a open-sourced lossless image format by <a href="https://github.com/WangXuan95">Xuan Wang</a>.
@@ -115,7 +112,6 @@ There are 20+ compression formats/methods that participated in this benchmark:
     which can be found at <a href="https://github.com/hpcn-uam/LOCO-ANS">github.com/hpcn-uam/LOCO-ANS</a>.
 - <b>LSP</b> is a open-sourced lossless image format, as same as the one tested in <a href="http://qlic.altervista.org/">24-bit RGB LPCB</a>.
 - <b>BCIF</b> (v1.0 beta) by Stefano Brocchi and <b>BIM</b> (v0.03) by Ilya Muravyov. Same as the one used in <a href="http://qlic.altervista.org/">24-bit RGB LPCB</a>.
-    <i>Note: since they do not directly support gray 8-bit image, so I test them using <a href="#rgb888_method">this method</a></i>.
 - <b>JPEG-LS</b> is a standard lossless image format. Two methods are used to encode/decode WEBP:
     - Python 3.9.13 with Pillow 10.1.0 and <a href="https://pypi.org/project/pillow-jpls/">pillow_jpls</a> Library, which is based on <a href="https://github.com/team-charls/charls">charLS</a> JPEG-LS C++ library.
     - the encoder/decoder from <a href="http://www.stat.columbia.edu/~jakulin/jpeg-ls/mirror.htm">UBC's JPEG-LS public code</a>.
