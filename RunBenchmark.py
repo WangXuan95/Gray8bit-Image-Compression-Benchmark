@@ -19,14 +19,14 @@ DIR_DECODED = 'decoded'         # Directory to put the decompressed images. Make
 
 # Note: please uncomment one of the lines below to select a codec !!!!!!!!!!!!!!!!!!!!!!!!!
 #                        [ encode command                                                                 , decode command                                              ]
-ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe -s -q9 -O{1} {0}'                                        , r'.\codec\BMF\BMF.exe -pnm -O{1} {0}'                       ]
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe -s -q9 -O{1} {0}'                                        , r'.\codec\BMF\BMF.exe -pnm -O{1} {0}'                       ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe -s     -O{1} {0}'                                        , r'.\codec\BMF\BMF.exe -pnm -O{1} {0}'                       ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe        -O{1} {0}'                                        , r'.\codec\BMF\BMF.exe -pnm -O{1} {0}'                       ]
-#ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce0t {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -d  {0} {1}.pgm'            ]
+ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce0t {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -d  {0} {1}.pgm'            ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce1  {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -d  {0} {1}.pgm'            ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce2V {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -dV {0} {1}.pgm'            ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\NBLIC\nblic_codec.exe -ce3V {0} {1}.nblic'                           , r'.\codec\NBLIC\nblic_codec.exe -dV {0} {1}.pgm'            ]
-#ENCODE_CMD, DECODE_CMD = [ r'.\codec\JPEG-XL\cjxl.exe {0} {1}.jxl -q 100 -e 7'                            , r'.\codec\JPEG-XL\djxl.exe {0} {1}.pgm'                     ]
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\JPEG-XL\cjxl.exe {0} {1}.jxl -q 100 -e 3'                            , r'.\codec\JPEG-XL\djxl.exe {0} {1}.pgm'                     ]
 #ENCODE_CMD, DECODE_CMD = [ r'python .\codec\CALIC\calic.py e {0} {1}.calic 0'                             , r'python .\codec\CALIC\calic.py d {0} {1}.raw'              ]
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\MRP\mrp_enc.exe    {0} {1}.mrp'                                      , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\MRP\mrp_enc.exe -o {0} {1}.mrp'                                      , r'.\codec\MRP\mrp_dec.exe {0} {1}.pgm'                      ]   # need to pad the image to a multiple of 8 first !!
@@ -34,7 +34,8 @@ ENCODE_CMD, DECODE_CMD = [ r'.\codec\BMF\BMF.exe -s -q9 -O{1} {0}'              
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\LEA\clea.exe {0} {1}.lea'                                            , r'.\codec\LEA\dlea.exe {0} {1}.ppm'                         ]   # require RGB888 image as input !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\FLIC\FLIC.exe c {1}.flic {0}'                                        , r'.\codec\FLIC\FLIC.exe d {0} {1}.ppm'                      ]   # require RGB888 image as input !!
 #ENCODE_CMD, DECODE_CMD = [ r'.\codec\QLIC2\QLIC2.exe c {1}.qlic2 {0}'                                     , r'.\codec\QLIC2\QLIC2.exe d {0} {1}.ppm'                    ]   # require RGB888 image as input !!
-#ENCODE_CMD, DECODE_CMD = [ r'.\codec\HALIC\Halic_Rapid_v_0_6_1_Encode.exe {0} {1}.halic'                  , r'.\codec\HALIC\Halic_Rapid_v_0_6_1_Decode.exe {0} {1}.pgm' ]   # require RGB888 image as input !!
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\HALIC072\HALIC_ENCODE_V.0.7.2_ST_AVX.exe {0} {1}.halic'              , r'.\codec\HALIC072\HALIC_DECODE_V.0.7.2_ST_AVX.exe {0} {1}.pgm'      ]
+#ENCODE_CMD, DECODE_CMD = [ r'.\codec\HALIC072\HALIC_ENCODE_V.0.7.2_ST_FAST_AVX.exe {0} {1}.halic'         , r'.\codec\HALIC072\HALIC_DECODE_V.0.7.2_ST_FAST_AVX.exe {0} {1}.pgm' ]
 #ENCODE_CMD, DECODE_CMD = [ r'wsl ./codec/FLIF/flif -e -N -E100 {0} {1}.flif'                              , r'wsl ./codec/FLIF/flif -d {0} {1}.pgm'                     ]   # require Windows subsystem of Linux (WSL) !!
 #ENCODE_CMD, DECODE_CMD = [ r'wsl ./codec/LOCO_ANS/loco_ans_codec 0 {0} {1}.locoans 0'                     , r'wsl ./codec/LOCO_ANS/loco_ans_codec 1 {0} {1}.pgm'        ]   # require Windows subsystem of Linux (WSL) !!
 #ENCODE_CMD, DECODE_CMD = [ r'wsl ./codec/SelectivePMO/pmo_codec -i {0} -b {1}.pmo'                        , r'wsl ./codec/SelectivePMO/pmo_codec -b {0} -o {1}'         ]   # require Windows subsystem of Linux (WSL) !!
